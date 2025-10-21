@@ -77,6 +77,24 @@
             }
         }
 
+        .hero-content .lead {
+            text-align: justify;
+            text-justify: inter-word;
+            max-width: 560px;
+            /* ubah agar sejajar dengan lebar judul */
+            margin-right: auto;
+            /* pastikan rata ke kiri dari kolom */
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.92);
+        }
+
+        @media (max-width: 991px) {
+            .hero-content .lead {
+                max-width: 100%;
+                text-align: left;
+            }
+        }
+
         .formal-image {
             width: 320px;
             max-width: 100%;
@@ -288,8 +306,9 @@
                 <div class="col-lg-6 hero-content">
                     <h1 class="display-4 fw-bold mb-4" id="heroTitle">Haloo..., I'm Rizqy Asyraff Athalah</h1>
                     <h2 class="h3 mb-4" style="color: var(--gold);">Software Engineer</h2>
-                    <p class="lead mb-5">Bringing ideas to life through clean, efficient code and interactive web
-                        experiences.</p>
+                    <p class="lead mb-5">Hello! I am a web developer who focuses on quality and detail. I believe that every
+                        great idea deserves to be realized through clean, efficient, and well-structured code — delivering
+                        an interactive, modern, and user-oriented web experience.</p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary-custom me-3">View My Work</a>
                         <a href="#contact" class="btn btn-outline-light">Get In Touch</a>
@@ -365,11 +384,11 @@
                             'demo' => '#',
                         ],
                         [
-                            'title' => 'Task Management App',
+                            'title' => 'Portofolio Website',
                             'description' => 'Productivity app for managing daily tasks and projects',
-                            'technologies' => ['Laravel', 'React', 'Bootstrap'],
-                            'icon' => 'fa-tasks',
-                            'github' => '#',
+                            'technologies' => ['Laravel'],
+                            'icon' => 'fa-user',
+                            'github' => 'https://github.com/asyraffatha/Portofolio_Asyraff',
                             'demo' => '#',
                         ],
                         [
