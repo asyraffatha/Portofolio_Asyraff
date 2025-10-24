@@ -385,18 +385,20 @@
                         ],
                         [
                             'title' => 'Portofolio Website',
-                            'description' => 'Productivity app for managing daily tasks and projects',
+                            'description' =>
+                                'Personal portfolio containing a self-description, experience, and completed projects',
                             'technologies' => ['Laravel'],
                             'icon' => 'fa-user',
                             'github' => 'https://github.com/asyraffatha/Portofolio_Asyraff',
                             'demo' => '#',
                         ],
                         [
-                            'title' => 'Weather Dashboard',
-                            'description' => 'Real-time weather information with beautiful UI',
-                            'technologies' => ['JavaScript', 'API', 'CSS3'],
+                            'title' => 'Game Store',
+                            'description' =>
+                                'A responsive web app for game boosting services (eFootball & Mobile Legends) built using Next.js, TypeScript, and Tailwind CSS — focusing on UI/UX and performance',
+                            'technologies' => ['Node.js', 'TypeScript', 'Tailwind CSS'],
                             'icon' => 'fa-cloud-sun',
-                            'github' => '#',
+                            'github' => 'https://github.com/asyraffatha/Joki_Game',
                             'demo' => '#',
                         ],
                     ];

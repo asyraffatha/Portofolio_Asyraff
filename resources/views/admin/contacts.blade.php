@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <span class="navbar-brand">Portfolio Admin</span>
+            <span class="navbar-brand">Portofolio Admin</span>
             <a href="/" class="btn btn-outline-light">
                 <i class="fas fa-home me-2"></i>Back to Site
             </a>
