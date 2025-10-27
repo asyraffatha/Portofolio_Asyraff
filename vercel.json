@@ -1,20 +1,9 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "public/**",
-            "use": "@vercel/static"
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.6.0"
         }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/public/$1"
-        }
-    ],
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "ADMIN_PASSWORD": "PortfolioAdmin_2024!Secure"
-    }
+    },
+    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }]
 }
