@@ -40,8 +40,16 @@ class PortofolioController extends Controller
     }
     
     // Admin methods
-    public function adminContacts()
+   public function adminContacts(Request $request)
     {
+        // Simple password check
+        $validPassword = env('ADMIN_PASSWORD', 'admin123');
+        $providedPassword = $request->get('password');
+        
+        if ($providedPassword !== $validPassword) {
+            abort(403, 'Unauthorized access. Please provide correct password.');
+        }
+
         $contacts = Contact::latest()->get();
         return view('admin.contacts', compact('contacts'));
     }
