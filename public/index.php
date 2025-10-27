@@ -3,6 +3,18 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
+// Vercel specific configuration
+if (isset($_SERVER['VERCEL'])) {
+    // For Vercel environment
+    $basePath = __DIR__;
+} else {
+    // For local environment
+    $basePath = __DIR__ . '/..';
+}
+
+// Set custom paths for Vercel
+$_ENV['APP_BASE_PATH'] = $basePath;
+
 define('LARAVEL_START', microtime(true));
 
 // Determine if the application is in maintenance mode...
