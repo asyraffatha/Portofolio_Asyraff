@@ -1,21 +1,9 @@
 {
     "build": {
         "builder": "NIXPACKS",
-        "nixpacksPlan": {
-            "phases": {
-                "install": {
-                    "cmds": [
-                        "composer install --no-dev --optimize-autoloader",
-                        "npm install"
-                    ]
-                },
-                "build": {
-                    "cmds": ["npm run build"]
-                },
-                "start": {
-                    "cmds": ["php artisan serve --host=0.0.0.0 --port=8080"]
-                }
-            }
-        }
+        "buildCommand": "composer install --no-dev --optimize-autoloader && npm install && npm run build"
+    },
+    "deploy": {
+        "startCommand": "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=8080"
     }
 }
