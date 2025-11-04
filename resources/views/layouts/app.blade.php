@@ -267,7 +267,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Rizqy Asyraff. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Rizqy Asyraff. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <div class="social-links-footer">
