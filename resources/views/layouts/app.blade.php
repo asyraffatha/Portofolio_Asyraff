@@ -225,6 +225,92 @@
                 transform: translateX(0);
             }
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .nav-link {
+                margin: 0 5px;
+                font-size: 0.9rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .section-title::after {
+                width: 80px;
+                height: 3px;
+            }
+
+            .btn-primary-custom {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .social-link {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+                margin: 5px;
+            }
+
+            footer .social-link {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+
+            .nav-link {
+                margin: 0 3px;
+                font-size: 0.8rem;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .btn-primary-custom {
+                padding: 10px 20px;
+                font-size: 0.8rem;
+            }
+
+            .social-link {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+                margin: 3px;
+            }
+
+            footer .social-link {
+                padding: 6px 12px;
+                font-size: 0.75rem;
+            }
+
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 
     @stack('styles')

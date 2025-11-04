@@ -294,6 +294,261 @@
             border-color: var(--primary-brown);
             box-shadow: 0 0 0 0.2rem rgba(139, 90, 60, 0.15);
         }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .section-title::after {
+                width: 80px;
+                height: 3px;
+            }
+
+            .hero-content .lead {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .formal-image {
+                width: 250px;
+                height: 250px;
+                border-width: 4px;
+            }
+
+            .btn-primary-custom,
+            .btn-outline-light {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .skill-item {
+                padding: 15px;
+                font-size: 0.9rem;
+            }
+
+            .card-img-top {
+                height: 180px;
+            }
+
+            .card-img-top i {
+                font-size: 2.5rem;
+            }
+
+            .contact-info i {
+                font-size: 1.2rem;
+            }
+
+            .social-link {
+                padding: 10px 20px;
+                font-size: 0.85rem;
+            }
+
+            .hero-buttons .btn {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section {
+                padding: 40px 0;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .display-4 {
+                font-size: 2rem;
+            }
+
+            .h3 {
+                font-size: 1.5rem;
+            }
+
+            .formal-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .btn-primary-custom,
+            .btn-outline-light {
+                padding: 10px 20px;
+                font-size: 0.8rem;
+            }
+
+            .skill-item {
+                padding: 12px;
+                font-size: 0.8rem;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .social-link {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+            }
+
+            .contact-info span {
+                font-size: 0.9rem;
+            }
+
+            /* Mobile Responsiveness */
+            +@media (max-width: 768px) {
+                +.section {
+                    +padding: 60px 0;
+                    +
+                }
+
+                ++.section-title {
+                    +font-size: 2rem;
+                    +margin-bottom: 2rem;
+                    +
+                }
+
+                ++.section-title::after {
+                    +width: 80px;
+                    +height: 3px;
+                    +
+                }
+
+                ++.hero-content .lead {
+                    +font-size: 1rem;
+                    +line-height: 1.6;
+                    +
+                }
+
+                ++.formal-image {
+                    +width: 250px;
+                    +height: 250px;
+                    +border-width: 4px;
+                    +
+                }
+
+                ++.btn-primary-custom,
+                +.btn-outline-light {
+                    +padding: 12px 25px;
+                    +font-size: 0.9rem;
+                    +
+                }
+
+                ++.skill-item {
+                    +padding: 15px;
+                    +font-size: 0.9rem;
+                    +
+                }
+
+                ++.card-img-top {
+                    +height: 180px;
+                    +
+                }
+
+                ++.card-img-top i {
+                    +font-size: 2.5rem;
+                    +
+                }
+
+                ++.contact-info i {
+                    +font-size: 1.2rem;
+                    +
+                }
+
+                ++.social-link {
+                    +padding: 10px 20px;
+                    +font-size: 0.85rem;
+                    +
+                }
+
+                ++.hero-buttons .btn {
+                    +margin-bottom: 10px;
+                    +width: 100%;
+                    +
+                }
+
+                ++.hero-buttons {
+                    +display: flex;
+                    +flex-direction: column;
+                    +align-items: stretch;
+                    +
+                }
+
+                +
+            }
+
+            ++@media (max-width: 576px) {
+                +.section {
+                    +padding: 40px 0;
+                    +
+                }
+
+                ++.section-title {
+                    +font-size: 1.8rem;
+                    +
+                }
+
+                ++.display-4 {
+                    +font-size: 2rem;
+                    +
+                }
+
+                ++.h3 {
+                    +font-size: 1.5rem;
+                    +
+                }
+
+                ++.formal-image {
+                    +width: 200px;
+                    +height: 200px;
+                    +
+                }
+
+                ++.btn-primary-custom,
+                +.btn-outline-light {
+                    +padding: 10px 20px;
+                    +font-size: 0.8rem;
+                    +
+                }
+
+                ++.skill-item {
+                    +padding: 12px;
+                    +font-size: 0.8rem;
+                    +
+                }
+
+                ++.card {
+                    +margin-bottom: 20px;
+                    +
+                }
+
+                ++.social-link {
+                    +padding: 8px 15px;
+                    +font-size: 0.8rem;
+                    +
+                }
+
+                ++.contact-info span {
+                    +font-size: 0.9rem;
+                    +
+                }
+
+                +
+            }
+        }
     </style>
 @endpush
 
@@ -353,6 +608,7 @@
                                 'Tailwind CSS',
                                 'Git',
                                 'REST API',
+                                'Figma',
                             ];
                         @endphp
                         @foreach (array_chunk($skills, 2) as $chunk)
