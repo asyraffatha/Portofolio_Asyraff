@@ -5,5 +5,25 @@
             "runtime": "vercel-php@0.7.4"
         }
     },
-    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }]
+    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_KEY": "@app-key",
+        "APP_URL": "https://portofolio-asyraff.vercel.app",
+
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+        "DB_HOST": "@db-host",
+        "DB_NAME": "@db-name",
+        "DB_PASSWORD": "@db-pass"
+    }
 }
